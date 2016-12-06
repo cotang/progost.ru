@@ -1,0 +1,173 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$s-fb-name: 's-fb';
+$s-fb-x: 58px;
+$s-fb-y: 58px;
+$s-fb-offset-x: -58px;
+$s-fb-offset-y: -58px;
+$s-fb-width: 45px;
+$s-fb-height: 41px;
+$s-fb-total-width: 161px;
+$s-fb-total-height: 149px;
+$s-fb-image: '../img/png-sprite.png';
+$s-fb: (58px, 58px, -58px, -58px, 45px, 41px, 161px, 149px, '../img/png-sprite.png', 's-fb', );
+$s-header-form-call-name: 's-header-form-call';
+$s-header-form-call-x: 0px;
+$s-header-form-call-y: 0px;
+$s-header-form-call-offset-x: 0px;
+$s-header-form-call-offset-y: 0px;
+$s-header-form-call-width: 54px;
+$s-header-form-call-height: 54px;
+$s-header-form-call-total-width: 161px;
+$s-header-form-call-total-height: 149px;
+$s-header-form-call-image: '../img/png-sprite.png';
+$s-header-form-call: (0px, 0px, 0px, 0px, 54px, 54px, 161px, 149px, '../img/png-sprite.png', 's-header-form-call', );
+$s-header-form-certificat-name: 's-header-form-certificat';
+$s-header-form-certificat-x: 58px;
+$s-header-form-certificat-y: 0px;
+$s-header-form-certificat-offset-x: -58px;
+$s-header-form-certificat-offset-y: 0px;
+$s-header-form-certificat-width: 54px;
+$s-header-form-certificat-height: 54px;
+$s-header-form-certificat-total-width: 161px;
+$s-header-form-certificat-total-height: 149px;
+$s-header-form-certificat-image: '../img/png-sprite.png';
+$s-header-form-certificat: (58px, 0px, -58px, 0px, 54px, 54px, 161px, 149px, '../img/png-sprite.png', 's-header-form-certificat', );
+$s-header-form-question-name: 's-header-form-question';
+$s-header-form-question-x: 0px;
+$s-header-form-question-y: 58px;
+$s-header-form-question-offset-x: 0px;
+$s-header-form-question-offset-y: -58px;
+$s-header-form-question-width: 54px;
+$s-header-form-question-height: 54px;
+$s-header-form-question-total-width: 161px;
+$s-header-form-question-total-height: 149px;
+$s-header-form-question-image: '../img/png-sprite.png';
+$s-header-form-question: (0px, 58px, 0px, -58px, 54px, 54px, 161px, 149px, '../img/png-sprite.png', 's-header-form-question', );
+$s-pencil-name: 's-pencil';
+$s-pencil-x: 0px;
+$s-pencil-y: 116px;
+$s-pencil-offset-x: 0px;
+$s-pencil-offset-y: -116px;
+$s-pencil-width: 50px;
+$s-pencil-height: 33px;
+$s-pencil-total-width: 161px;
+$s-pencil-total-height: 149px;
+$s-pencil-image: '../img/png-sprite.png';
+$s-pencil: (0px, 116px, 0px, -116px, 50px, 33px, 161px, 149px, '../img/png-sprite.png', 's-pencil', );
+$s-search-name: 's-search';
+$s-search-x: 116px;
+$s-search-y: 90px;
+$s-search-offset-x: -116px;
+$s-search-offset-y: -90px;
+$s-search-width: 16px;
+$s-search-height: 16px;
+$s-search-total-width: 161px;
+$s-search-total-height: 149px;
+$s-search-image: '../img/png-sprite.png';
+$s-search: (116px, 90px, -116px, -90px, 16px, 16px, 161px, 149px, '../img/png-sprite.png', 's-search', );
+$s-tw-name: 's-tw';
+$s-tw-x: 116px;
+$s-tw-y: 0px;
+$s-tw-offset-x: -116px;
+$s-tw-offset-y: 0px;
+$s-tw-width: 45px;
+$s-tw-height: 41px;
+$s-tw-total-width: 161px;
+$s-tw-total-height: 149px;
+$s-tw-image: '../img/png-sprite.png';
+$s-tw: (116px, 0px, -116px, 0px, 45px, 41px, 161px, 149px, '../img/png-sprite.png', 's-tw', );
+$s-vk-name: 's-vk';
+$s-vk-x: 116px;
+$s-vk-y: 45px;
+$s-vk-offset-x: -116px;
+$s-vk-offset-y: -45px;
+$s-vk-width: 45px;
+$s-vk-height: 41px;
+$s-vk-total-width: 161px;
+$s-vk-total-height: 149px;
+$s-vk-image: '../img/png-sprite.png';
+$s-vk: (116px, 45px, -116px, -45px, 45px, 41px, 161px, 149px, '../img/png-sprite.png', 's-vk', );
+$spritesheet-width: 161px;
+$spritesheet-height: 149px;
+$spritesheet-image: '../img/png-sprite.png';
+$spritesheet-sprites: ($s-fb, $s-header-form-call, $s-header-form-certificat, $s-header-form-question, $s-pencil, $s-search, $s-tw, $s-vk, );
+$spritesheet: (161px, 149px, '../img/png-sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

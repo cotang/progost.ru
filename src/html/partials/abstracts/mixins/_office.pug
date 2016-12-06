@@ -1,0 +1,20 @@
+mixin office(items)
+  each item in items
+    +b.TR.office
+      +e.TD.city #{item.city}
+      +e.TD.title #{item.title}
+      +e.TD.details
+        +e.info
+          +e.address #{item.address}
+          +e.P.email E-mail: 
+            a(href= "mailto:" + item.email, target="_blank") #{item.email}
+          if item.fax !== undefined
+            +e.tel Тел/факс: 
+              a(href= "tel:" + item.fax, target="_blank") #{item.fax}
+          +e.tel Телефон: 
+            a(href= "tel:" + item.tel, target="_blank") #{item.tel}
+          +e.hours Время работы офиса с 
+            span #{item.workFrom}
+            =' до '
+            span #{item.workTo}
+            =' по местному времени'

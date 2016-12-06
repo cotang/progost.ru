@@ -1,0 +1,31 @@
+.sidebar{
+  margin-top: 30px;
+  &__link{
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+    background-image: linear-gradient(-35deg, $dark-yellow 47%, $light-yellow 0%);
+    border: 3px solid $blue;  
+    color: $blue;
+    text-transform: uppercase;
+    @include font-family('Pf Bold', normal, normal);
+    font-size: $font-size-bigger;
+    text-decoration: none;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.contacts-sidebar{
+  &__title{
+    @include font-family('Pf Regular', normal, normal);
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-size: $font-size-big;
+  }
+  &__list{
+    padding-left: 0;
+    list-style-type: none;
+  }
+}

@@ -1,0 +1,19 @@
+include ../abstracts/bemto/bemto.pug
+
+
++b.SECTION.news-section
+  +e.title-wrapper
+    +e.H2.title Новости портала
+    +e.archive-link(href="page-news.html") Архив новостей
+  +e.articles
+    +b.ARTICLE.news-section-item(itemscope, itemtype="http://schema.org/Article")
+      +e.A.link(href="page.html")      
+        +e.H3.title(itemprop="headline") Приказ об изображении национального знака стандартизации
+        +e.DIV.date(itemprop="datePublished") 31.08.2016
+        +e.DIV.text(itemprop="articleSection") Новый приказ об изображении знака стандартизации создан, подписанный еще 23 июня 2016 года, был утвержден 4 июля и вступил в силу уже с 16 июля 2016 года. В данном приказе было установлено изображение знака национальной стандартизации, про которое подробно написано в законе […]
+    +b.ARTICLE.news-section-item(itemscope, itemtype="http://schema.org/Article")
+      +e.A.link(href="page.html")      
+        +e.H3.title(itemprop="headline") Пресс-конференция «Детский травматизм во время летних каникул» в г. Челябинск
+        +e.DIV.date(itemprop="datePublished") 07.06.2016
+        +e.DIV.text(itemprop="articleSection") В Челябинске 31 мая 2016 г. состоялась пресс-конференция на тему детского травматизма во время летних каникул, где обсуждались важнейшие вопросы касаемо обеспечения безопасного отдыха детей летом. Для комплексного обсуждения темы конференции, на нее были приглашены не только представители медицинских учреждений и Министерства […]
+

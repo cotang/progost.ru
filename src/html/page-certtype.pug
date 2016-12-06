@@ -1,0 +1,28 @@
+extends partials/templates/_template.pug
+include partials/abstracts/mixins/_certification-type-item.pug
+
+block content
+  +b.SECTION.page--certtype
+    .container
+      .row          
+        .col-xs-12.col-lg-10.push-lg-2
+          // Content
+          +b.SECTION.content
+            +e.H1.title Виды сертификатов
+            // View
+            include partials/components/_view.pug
+            +e.content__text 
+              p Для легального производства и реализации, на территории России введен ряд разрешительных документов, которые удостоверяют безопасность продукции. Основные виды сертификатов, которые могут потребоваться при производстве различных видов продукции.
+            // Tags
+            include partials/components/_tags.pug
+            +e.content__articles 
+              +certificationTypeItem("ISO. Сертификат соответствия системы менеджмента качества", "iso", "ISO. Сертификат соответствия системы менеджмента качества")
+              +certificationTypeItem("RoHS сертификация", "rohs", "RoHS сертификация")
+              +certificationTypeItem("Ветеринарное свидетельство", "vet", "Ветеринарное свидетельство")
+
+        .col-xs-12.col-lg-2.pull-lg-10
+          // Sidebar
+          include partials/components/_sidebar.pug
+
+
+

@@ -1,0 +1,28 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--not-found
+    .container
+      .row          
+        .col-xs-12.col-lg-10.push-lg-2
+          // Content
+          +b.SECTION.content
+            +e.H1.title Страница не найдена
+            +e.text 
+              p Ошибка 404
+              p Возможные причины ошибки:
+              ul
+                li ошибка при наборе адреса страницы (URL);
+                li переход по неработающей или неправильной ссылке;
+                li отстутствие запрашиваемой страницы на сайте;
+              a(href='index.html') Вернуться на главную страницу
+              
+        .col-xs-12.col-lg-2.pull-lg-10
+          // Sidebar
+          include partials/components/_sidebar.pug
+
+
+          
+
+
+

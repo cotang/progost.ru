@@ -1,0 +1,52 @@
+.contacts{
+  background-image: url(../img/content_bg.png);
+  background-repeat: repeat;
+  margin-bottom: 40px;
+  &__upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__title{
+    @include font-family('Pf Regular', normal, normal);
+    margin: 10px;
+    font-size: $font-size-big;
+  }
+  &__form{
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  &__map{
+    margin: 20px 0;
+    height: 300px;
+  }
+}
+
+
+.table-offices{
+
+}
+
+.office{  
+  &:nth-of-type(2n+1):not(:first-of-type){
+    background-color: rgba(0,0,0,.1);
+  }
+  &--header{
+    background-color: $blue;
+    color: $text-color-white;
+  }
+
+
+  &__city{
+    padding: 10px;
+    width: 20%;
+  }
+  &__title{
+    padding: 10px;
+    width: 20%;
+  }
+  &__details{
+    padding: 10px;
+    width: 60%;
+  }
+}

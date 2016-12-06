@@ -1,0 +1,5 @@
+mixin glossaryArticleItem(title, text)
+  +b.ARTICLE.glossary-item
+    +e.H3.title
+      +e.A.link(href="page.html") #{title}   
+    +e.text #{text}

@@ -1,0 +1,76 @@
+include ../abstracts/bemto/bemto.pug
+
+// Header
++b.HEADER.header
+  // Hamburger
+  +e.hamburger
+    +b.A.hamburger(href="#")
+      span
+  // Nav
+  +e.nav
+    .container
+      // Nav menu header
+      +b.NAV.nav-header
+        +e.UL.list
+          +e.item 
+            +e.A.link(href="index.html") Главная
+          +e.item
+            +e.A.link(href="page-glossary.html") Азбука сертификации
+          +e.item 
+            +e.A.link(href="page.html") Лицензирование в России
+          +e.item 
+            +e.A.link(href="page-laws.html") Законодательство
+          +e.item 
+            +e.A.link(href="page-faq.html") FAQ
+          +e.item
+            +e.A.link(href="page.html") Форум
+          +e.item 
+            +e.A.link(href="page-questions.html") Ответы на вопросы
+          +e.item--search      
+            // Form search
+            +b.SECTION.form--search
+              form(action='', method='')
+                .form-group.field-search.required
+                  +e.INPUT.input(type='text', name='Поиск', placeholder="Искать...")
+                  p.help-block Ошибка заполнения поля формы
+  +e.logo-wrapper
+    .container
+      +e.wrapper
+        +e.logo
+          // Logo
+          +b.A.logo(href="index.html", itemscope, itemtype="http://schema.org/Brand")       
+            img(src="img/logo.png", alt="logo", title="logo", itemprop="logo")
+        // Three buttons
+        +b.header-three-buttons
+          +e.item
+            +e.icon
+            +e.A.link(href="page-questions.html", data-form='question') Задать вопрос
+          +e.item
+            +e.icon
+            +e.A.link(href="page-call.html", data-form='call') Заказать звонок
+          +e.item
+            +e.icon
+            +e.A.link(href="page-application.html", data-form='application') Заказать сертификат
+  // Services
+  +e.services
+    .container
+      +b.menu-services
+        +e.UL.list
+          +e.item 
+            +e.A.link(href="page-goods.html") Сертификат на товар
+          +e.item 
+            +e.A.link(href="page-certtype.html") Виды сертификатов
+          +e.item
+            +e.A.link(href="page.html") Технические регламенты
+          +e.item
+            +e.A.link(href="page.html") База кодов ТН ВЭД
+          +e.item
+            +e.A.link(href="page.html") База ГОСТов России
+          +e.item
+            +e.A.link(href="page.html") Проверка документов  
+
+
+
+        
+
+

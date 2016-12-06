@@ -1,0 +1,6 @@
+mixin newsItem(title, text)
+  +b.ARTICLE.news-item
+    +e.A.link(href="page.html")
+      +e.DIV.inner 
+        +e.H3.title #{title}
+        +e.text #{text}

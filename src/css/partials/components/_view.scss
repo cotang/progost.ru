@@ -1,0 +1,56 @@
+.view{
+  margin: 10px 0;
+  text-align: right;
+  &__pics{
+    margin-left: 10px;
+    display: inline-block;
+    background-color: $blue;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    &:before{
+      content: '';
+      background-color: $white;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 6px;
+      height: 26px;
+    }
+    &:after{
+      content: '';
+      background-color: $white;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      height: 6px;
+      width: 26px;
+    }
+  }
+  &__list{
+    margin-left: 10px;
+    display: inline-block;
+    background-color: $blue;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    &:before{
+      content: '';
+      background-color: $white;
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+      height: 4px;
+      width: 26px;
+    }
+    &:after{
+      content: '';
+      background-color: $white;
+      position: absolute;
+      top: 6px;
+      left: 0;
+      height: 4px;
+      width: 26px;
+    }
+  }
+}

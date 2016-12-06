@@ -1,0 +1,26 @@
+.pagination{
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &__text{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  &__number{
+    display: inline-block;
+    padding: 5px 5px;
+    &:hover, &:focus, &:active{
+      color: $blue;
+    }
+    &--current{
+      color: $text-color;
+      text-decoration: none;
+      &:hover, &:focus, &:active{
+        color: $text-color;
+      }
+    }
+  } 
+}

@@ -1,0 +1,36 @@
+extends partials/templates/_template.pug
+include partials/abstracts/mixins/_goods-item.pug
+
+block content
+  +b.SECTION.page--goods
+    .container
+      .row          
+        .col-xs-12.col-lg-10.push-lg-2
+          // Content
+          +b.SECTION.content
+            +e.H1.title Перечень товаров по сертификации
+            // View
+            include partials/components/_view.pug
+            // Alphabet
+            include partials/components/_alphabet.pug
+            +e.content__articles
+              +e.content__letter
+                +b.letter(id='A') А
+                +goodsItem("Арматура трубопроводная. Сертификация арматуры", "armatura", "арматура")
+                +goodsItem("Автосервис. Сертификация услуг автосервиса", "avtoservis", "автосервис")
+              +e.content__letter(id='Б')
+                +b.letter(id='Б') Б
+                +goodsItem("Блоки оконные. Сертификация оконных блоков", "okno", "окна")
+                +goodsItem("Бумага. Сертификат на бумагу","bumaga", "бумага")
+              +e.content__letter(id='В')
+                +b.letter(id='В') В
+                +goodsItem("Вид деятельности. Сертификация видов деятельности","deyatelnost", "деятельность")
+
+        .col-xs-12.col-lg-2.pull-lg-10
+          // Sidebar
+          include partials/components/_sidebar.pug
+
+
+
+
+
