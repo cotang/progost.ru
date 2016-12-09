@@ -6,7 +6,17 @@
 
 .news-item{
   flex: 0 0 33.3333%;
+  max-width: 33.3333%;
   margin-bottom: 10px;
+  @include mq($from:sm, $until:lg){
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @include mq($from:xs, $until:sm){
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   &__link{
     width: 100%;
     padding-bottom: 100%;

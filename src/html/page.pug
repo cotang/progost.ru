@@ -4,7 +4,7 @@ block content
   +b.SECTION.page
     .container
       .row          
-        .col-xs-12.col-lg-10.push-lg-2
+        .col-xs-12.col-md-9.push-md-3.col-lg-10.push-lg-2
           // Content
           +b.SECTION.content(itemscope, itemtype="http://schema.org/Article")
             +e.H1.title(itemprop="headline") Протокол испытаний
@@ -57,7 +57,7 @@ block content
             // Form question
             include partials/components/_form--question.pug  
                             
-        .col-xs-12.col-lg-2.pull-lg-10
+        .col-xs-12.col-md-3.pull-md-9.col-lg-2.pull-lg-10
           // Sidebar
           include partials/components/_sidebar.pug
 

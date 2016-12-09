@@ -3,7 +3,7 @@
   &__link{
     display: block;
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 10px;
     background-image: linear-gradient(-35deg, $dark-yellow 47%, $light-yellow 0%);
     border: 3px solid $blue;  
     color: $blue;
@@ -11,6 +11,10 @@
     @include font-family('Pf Bold', normal, normal);
     font-size: $font-size-bigger;
     text-decoration: none;
+    @include mq($from:xs, $until:md){
+      padding: 20px 10px;
+    }
+
     &:hover, &:focus {
       text-decoration: underline;
     }
@@ -27,5 +31,8 @@
   &__list{
     padding-left: 0;
     list-style-type: none;
+    @include mq($from:xs, $until:md){
+      columns: 2;
+    }
   }
 }

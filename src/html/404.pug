@@ -4,7 +4,7 @@ block content
   +b.SECTION.page--not-found
     .container
       .row          
-        .col-xs-12.col-lg-10.push-lg-2
+        .col-xs-12.col-md-9.push-md-3.col-lg-10.push-lg-2
           // Content
           +b.SECTION.content
             +e.H1.title Страница не найдена
@@ -15,9 +15,8 @@ block content
                 li ошибка при наборе адреса страницы (URL);
                 li переход по неработающей или неправильной ссылке;
                 li отстутствие запрашиваемой страницы на сайте;
-              a(href='index.html') Вернуться на главную страницу
-              
-        .col-xs-12.col-lg-2.pull-lg-10
+              a(href='index.html') Вернуться на главную страницу              
+        .col-xs-12.col-md-3.pull-md-9.col-lg-2.pull-lg-10
           // Sidebar
           include partials/components/_sidebar.pug
 

@@ -48,6 +48,10 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
+    @include mq($from:xs, $until:xl){
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
 }
 

@@ -19,6 +19,10 @@
     margin-bottom: 15px;
     background-color: $light-yellow;
     color: $text-color;
+    @include mq($from:xs, $until:md){
+      margin-left: 0;
+    }
+    
     &:hover, &:focus, &:active{
       background-color: $blue;
       color: $text-color-white;
