@@ -6,6 +6,7 @@
     max-width: 100%;
     background-image: url(../img/menu_header_bg.png);
     background-repeat: repeat;
+    display: block;
     @include mq($from:xs, $until:lg){
       display: none;
     }
@@ -35,6 +36,7 @@
     background-repeat: repeat;
     // padding-bottom: 20px;
     margin-bottom: 40px;
+    display: block;
     @include mq($from:xs, $until:lg){
       background-image: url(../img/menu_header_bg.png);
       display: none;

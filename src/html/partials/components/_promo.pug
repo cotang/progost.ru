@@ -10,18 +10,15 @@ include ../abstracts/bemto/bemto.pug
         p Ежедневно сотни людей заходят на сайт, получают ответы на свои вопросы, заказывают и оформляют документы, подтверждающие качество их продукции и услуг. ПроГОСТ взаимодействует без малого с 50 центрами и органами по сертификации по всей России. Только благодаря этому каждый день оформляются десятки лицензий и деклараций, свидетельств и сертификатов на продукцию, заключений, удостоверений и других документов.
         p Желаем вам приятной работы! 
         p Команда ПроГОСТ
-      .row
-        .col-xs-12.col-md-6.col-lg-4
+      +e.flex
+        +e.gif
+          img(src="img/banner1.gif", alt="banner", title="banner")
+        +e.social
           +e.H3.subtitle Мы в социальных сетях
           +b.UL.social-links
             +e.A.link--vk(target="_blank", href="https://vk.com")
-            +e.A.link--tw(target="_blank", href="https://twitter.com")
-        .col-xs-12.col-md-6.col-lg-4
-          +e.H3.subtitle Вы можете сохранить закладку на сайт
-          +b.widget Виджет VK
-        .col-xs-12.col-md-6.col-lg-4           
-          +e.gif
-            img(src="img/banner1.gif", alt="banner", title="banner")
+            +e.A.link--tw(target="_blank", href="https://twitter.com")        
+
 
 
 

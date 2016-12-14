@@ -11,6 +11,16 @@ jQuery(document).ready(function($){
       $(this).closest('.header').find('.header__nav').slideToggle();
       $(this).closest('.header').find('.header__services').slideToggle();
   });
+  $(window).resize(function(){
+    if ($(window).width() > 768) {
+      $('.header__nav').show();
+      $('.header__services').show();
+    } else {
+      $('.header__nav').hide();
+      $('.header__services').hide();
+    }
+  });
+
 
   /* view */
   $('.view__list').click(function(e) { 
@@ -21,7 +31,6 @@ jQuery(document).ready(function($){
       e.preventDefault();    
       $(this).closest('.content').find('.content__articles').removeClass('content__articles--list');
   });
-
 
 
   // /* галерея header banner */
